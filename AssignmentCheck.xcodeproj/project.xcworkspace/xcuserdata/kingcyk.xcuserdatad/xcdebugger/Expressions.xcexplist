@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "CourseList.viewDidLoad() -&gt; ():courseList.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "courses">
+            </PersistentString>
+            <PersistentString
+               value = "courseMgr.courses">
+            </PersistentString>
+            <PersistentString
+               value = "list">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.viewDidLoad() -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "nowSelected">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CourseEdit.finishEditing() -&gt; ():courseEdit.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "courseMgr.courses">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

@@ -14,6 +14,9 @@
 		AE2608581E0BEE3500236A06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE2608561E0BEE3500236A06 /* LaunchScreen.storyboard */; };
 		AE2608631E0BEE3500236A06 /* AssignmentCheckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2608621E0BEE3500236A06 /* AssignmentCheckTests.swift */; };
 		AE26086E1E0BEE3500236A06 /* AssignmentCheckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE26086D1E0BEE3500236A06 /* AssignmentCheckUITests.swift */; };
+		AE2608801E0BFC4800236A06 /* courseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE26087F1E0BFC4800236A06 /* courseManager.swift */; };
+		AE2608821E0BFE8800236A06 /* courseEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2608811E0BFE8800236A06 /* courseEdit.swift */; };
+		AE2608841E0BFEAD00236A06 /* courseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2608831E0BFEAD00236A06 /* courseList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		AE2608691E0BEE3500236A06 /* AssignmentCheckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssignmentCheckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE26086D1E0BEE3500236A06 /* AssignmentCheckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentCheckUITests.swift; sourceTree = "<group>"; };
 		AE26086F1E0BEE3500236A06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE26087F1E0BFC4800236A06 /* courseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = courseManager.swift; sourceTree = "<group>"; };
+		AE2608811E0BFE8800236A06 /* courseEdit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = courseEdit.swift; sourceTree = "<group>"; };
+		AE2608831E0BFEAD00236A06 /* courseList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = courseList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,15 @@
 		AE26084C1E0BEE3500236A06 /* AssignmentCheck */ = {
 			isa = PBXGroup;
 			children = (
+				AE2608811E0BFE8800236A06 /* courseEdit.swift */,
 				AE26084D1E0BEE3500236A06 /* AppDelegate.swift */,
 				AE26084F1E0BEE3500236A06 /* ViewController.swift */,
 				AE2608511E0BEE3500236A06 /* Main.storyboard */,
 				AE2608541E0BEE3500236A06 /* Assets.xcassets */,
 				AE2608561E0BEE3500236A06 /* LaunchScreen.storyboard */,
 				AE2608591E0BEE3500236A06 /* Info.plist */,
+				AE26087F1E0BFC4800236A06 /* courseManager.swift */,
+				AE2608831E0BFEAD00236A06 /* courseList.swift */,
 			);
 			path = AssignmentCheck;
 			sourceTree = "<group>";
@@ -262,7 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE2608801E0BFC4800236A06 /* courseManager.swift in Sources */,
+				AE2608841E0BFEAD00236A06 /* courseList.swift in Sources */,
 				AE2608501E0BEE3500236A06 /* ViewController.swift in Sources */,
+				AE2608821E0BFE8800236A06 /* courseEdit.swift in Sources */,
 				AE26084E1E0BEE3500236A06 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +429,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 982HK3878L;
 				INFOPLIST_FILE = AssignmentCheck/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kingcyk.AssignmentCheck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -430,6 +443,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 982HK3878L;
 				INFOPLIST_FILE = AssignmentCheck/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kingcyk.AssignmentCheck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,6 +528,7 @@
 				AE2608741E0BEE3500236A06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE2608751E0BEE3500236A06 /* Build configuration list for PBXNativeTarget "AssignmentCheckTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +537,7 @@
 				AE2608771E0BEE3500236A06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE2608781E0BEE3500236A06 /* Build configuration list for PBXNativeTarget "AssignmentCheckUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +546,7 @@
 				AE26087A1E0BEE3500236A06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
