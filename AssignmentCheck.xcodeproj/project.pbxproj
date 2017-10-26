@@ -17,6 +17,11 @@
 		AE2608801E0BFC4800236A06 /* courseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE26087F1E0BFC4800236A06 /* courseManager.swift */; };
 		AE2608821E0BFE8800236A06 /* courseEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2608811E0BFE8800236A06 /* courseEdit.swift */; };
 		AE2608841E0BFEAD00236A06 /* courseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2608831E0BFEAD00236A06 /* courseList.swift */; };
+		AE26088C1E0C3C9700236A06 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE26088B1E0C3C9700236A06 /* NotificationCenter.framework */; };
+		AE26088F1E0C3C9700236A06 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE26088E1E0C3C9700236A06 /* TodayViewController.swift */; };
+		AE2608921E0C3C9700236A06 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE2608901E0C3C9700236A06 /* MainInterface.storyboard */; };
+		AE2608961E0C3C9700236A06 /* TodayWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AE2608891E0C3C9700236A06 /* TodayWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AE26089D1E0C3ECF00236A06 /* courseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE26087F1E0BFC4800236A06 /* courseManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +39,28 @@
 			remoteGlobalIDString = AE2608491E0BEE3500236A06;
 			remoteInfo = AssignmentCheck;
 		};
+		AE2608941E0C3C9700236A06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE2608421E0BEE3400236A06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE2608881E0C3C9700236A06;
+			remoteInfo = TodayWidget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AE26089A1E0C3C9700236A06 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AE2608961E0C3C9700236A06 /* TodayWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AE26084A1E0BEE3500236A06 /* AssignmentCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssignmentCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +79,13 @@
 		AE26087F1E0BFC4800236A06 /* courseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = courseManager.swift; sourceTree = "<group>"; };
 		AE2608811E0BFE8800236A06 /* courseEdit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = courseEdit.swift; sourceTree = "<group>"; };
 		AE2608831E0BFEAD00236A06 /* courseList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = courseList.swift; sourceTree = "<group>"; };
+		AE2608891E0C3C9700236A06 /* TodayWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE26088B1E0C3C9700236A06 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		AE26088E1E0C3C9700236A06 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		AE2608911E0C3C9700236A06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		AE2608931E0C3C9700236A06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE26089B1E0C3D9C00236A06 /* AssignmentCheck.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AssignmentCheck.entitlements; sourceTree = "<group>"; };
+		AE26089C1E0C3DB700236A06 /* TodayWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TodayWidget.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +110,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AE2608861E0C3C9700236A06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE26088C1E0C3C9700236A06 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -86,6 +127,8 @@
 				AE26084C1E0BEE3500236A06 /* AssignmentCheck */,
 				AE2608611E0BEE3500236A06 /* AssignmentCheckTests */,
 				AE26086C1E0BEE3500236A06 /* AssignmentCheckUITests */,
+				AE26088D1E0C3C9700236A06 /* TodayWidget */,
+				AE26088A1E0C3C9700236A06 /* Frameworks */,
 				AE26084B1E0BEE3500236A06 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,6 +139,7 @@
 				AE26084A1E0BEE3500236A06 /* AssignmentCheck.app */,
 				AE26085E1E0BEE3500236A06 /* AssignmentCheckTests.xctest */,
 				AE2608691E0BEE3500236A06 /* AssignmentCheckUITests.xctest */,
+				AE2608891E0C3C9700236A06 /* TodayWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +147,7 @@
 		AE26084C1E0BEE3500236A06 /* AssignmentCheck */ = {
 			isa = PBXGroup;
 			children = (
+				AE26089B1E0C3D9C00236A06 /* AssignmentCheck.entitlements */,
 				AE2608811E0BFE8800236A06 /* courseEdit.swift */,
 				AE26084D1E0BEE3500236A06 /* AppDelegate.swift */,
 				AE26084F1E0BEE3500236A06 /* ViewController.swift */,
@@ -134,6 +179,25 @@
 			path = AssignmentCheckUITests;
 			sourceTree = "<group>";
 		};
+		AE26088A1E0C3C9700236A06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE26088B1E0C3C9700236A06 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE26088D1E0C3C9700236A06 /* TodayWidget */ = {
+			isa = PBXGroup;
+			children = (
+				AE26089C1E0C3DB700236A06 /* TodayWidget.entitlements */,
+				AE26088E1E0C3C9700236A06 /* TodayViewController.swift */,
+				AE2608901E0C3C9700236A06 /* MainInterface.storyboard */,
+				AE2608931E0C3C9700236A06 /* Info.plist */,
+			);
+			path = TodayWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,10 +208,12 @@
 				AE2608461E0BEE3500236A06 /* Sources */,
 				AE2608471E0BEE3500236A06 /* Frameworks */,
 				AE2608481E0BEE3500236A06 /* Resources */,
+				AE26089A1E0C3C9700236A06 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AE2608951E0C3C9700236A06 /* PBXTargetDependency */,
 			);
 			name = AssignmentCheck;
 			productName = AssignmentCheck;
@@ -190,6 +256,23 @@
 			productReference = AE2608691E0BEE3500236A06 /* AssignmentCheckUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		AE2608881E0C3C9700236A06 /* TodayWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE2608991E0C3C9700236A06 /* Build configuration list for PBXNativeTarget "TodayWidget" */;
+			buildPhases = (
+				AE2608851E0C3C9700236A06 /* Sources */,
+				AE2608861E0C3C9700236A06 /* Frameworks */,
+				AE2608871E0C3C9700236A06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodayWidget;
+			productName = TodayWidget;
+			productReference = AE2608891E0C3C9700236A06 /* TodayWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +287,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 982HK3878L;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					AE26085D1E0BEE3500236A06 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -216,6 +304,16 @@
 						DevelopmentTeam = 982HK3878L;
 						ProvisioningStyle = Automatic;
 						TestTargetID = AE2608491E0BEE3500236A06;
+					};
+					AE2608881E0C3C9700236A06 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 982HK3878L;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -235,6 +333,7 @@
 				AE2608491E0BEE3500236A06 /* AssignmentCheck */,
 				AE26085D1E0BEE3500236A06 /* AssignmentCheckTests */,
 				AE2608681E0BEE3500236A06 /* AssignmentCheckUITests */,
+				AE2608881E0C3C9700236A06 /* TodayWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -261,6 +360,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE2608871E0C3C9700236A06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2608921E0C3C9700236A06 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +402,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AE2608851E0C3C9700236A06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE26089D1E0C3ECF00236A06 /* courseManager.swift in Sources */,
+				AE26088F1E0C3C9700236A06 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -307,6 +423,11 @@
 			isa = PBXTargetDependency;
 			target = AE2608491E0BEE3500236A06 /* AssignmentCheck */;
 			targetProxy = AE26086A1E0BEE3500236A06 /* PBXContainerItemProxy */;
+		};
+		AE2608951E0C3C9700236A06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE2608881E0C3C9700236A06 /* TodayWidget */;
+			targetProxy = AE2608941E0C3C9700236A06 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -325,6 +446,14 @@
 				AE2608571E0BEE3500236A06 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AE2608901E0C3C9700236A06 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE2608911E0C3C9700236A06 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -426,7 +555,9 @@
 		AE2608731E0BEE3500236A06 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AssignmentCheck/AssignmentCheck.entitlements;
 				DEVELOPMENT_TEAM = 982HK3878L;
 				INFOPLIST_FILE = AssignmentCheck/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -440,7 +571,9 @@
 		AE2608741E0BEE3500236A06 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AssignmentCheck/AssignmentCheck.entitlements;
 				DEVELOPMENT_TEAM = 982HK3878L;
 				INFOPLIST_FILE = AssignmentCheck/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -509,6 +642,34 @@
 			};
 			name = Release;
 		};
+		AE2608971E0C3C9700236A06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TodayWidget/TodayWidget.entitlements;
+				DEVELOPMENT_TEAM = 982HK3878L;
+				INFOPLIST_FILE = TodayWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingcyk.AssignmentCheck.TodayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AE2608981E0C3C9700236A06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TodayWidget/TodayWidget.entitlements;
+				DEVELOPMENT_TEAM = 982HK3878L;
+				INFOPLIST_FILE = TodayWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingcyk.AssignmentCheck.TodayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -547,6 +708,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		AE2608991E0C3C9700236A06 /* Build configuration list for PBXNativeTarget "TodayWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE2608971E0C3C9700236A06 /* Debug */,
+				AE2608981E0C3C9700236A06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="TodayWidget" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2R2-cT-S1H">
+                                <rect key="frame" x="139" y="8" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="EP2-Ba-bLe">
+                                <rect key="frame" x="113" y="73" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepperValueChanged" destination="M4Y-Lb-cyx" eventType="valueChanged" id="NZ6-2J-XCO"/>
+                                </connections>
+                            </stepper>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GjV-ok-JAd">
+                                <rect key="frame" x="16" y="48" width="288" height="2"/>
+                            </progressView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="EP2-Ba-bLe" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="16I-JJ-nz8"/>
+                            <constraint firstItem="2R2-cT-S1H" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="8" id="FkW-6Z-ZUz"/>
+                            <constraint firstItem="GjV-ok-JAd" firstAttribute="top" secondItem="2R2-cT-S1H" secondAttribute="bottom" constant="19" id="Vl9-rK-4Pw"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="EP2-Ba-bLe" secondAttribute="bottom" constant="8" id="aDC-ZT-i78"/>
+                            <constraint firstItem="2R2-cT-S1H" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="cdS-6k-cGd"/>
+                            <constraint firstItem="GjV-ok-JAd" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="cnf-gm-dkK"/>
+                            <constraint firstItem="GjV-ok-JAd" firstAttribute="trailing" secondItem="S3S-Oj-5AN" secondAttribute="trailingMargin" id="pxb-kQ-0fX"/>
+                            <constraint firstItem="EP2-Ba-bLe" firstAttribute="top" secondItem="GjV-ok-JAd" secondAttribute="bottom" constant="23" id="wME-aI-0PJ"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="110"/>
+                    <connections>
+                        <outlet property="desc" destination="2R2-cT-S1H" id="XS3-mu-w7S"/>
+                        <outlet property="progressBar" destination="GjV-ok-JAd" id="h4Y-mU-0Xp"/>
+                        <outlet property="stepper" destination="EP2-Ba-bLe" id="Ia8-CQ-hKe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25.600000000000001" y="34.182908545727138"/>
+        </scene>
+    </scenes>
+</document>

@@ -172,7 +172,7 @@
                                 <state key="normal" title="完成"/>
                                 <connections>
                                     <action selector="finishEditing" destination="13R-xR-O6P" eventType="touchUpInside" id="2Wc-0B-27E"/>
-                                    <segue destination="e9k-Av-EVA" kind="show" id="JhK-61-cV2"/>
+                                    <segue destination="e9k-Av-EVA" kind="show" id="3PJ-Bg-HIu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xQ-0h-eJx">
@@ -180,7 +180,7 @@
                                 <state key="normal" title="取消"/>
                                 <connections>
                                     <action selector="cancelEditing" destination="13R-xR-O6P" eventType="touchUpInside" id="ZmK-ie-C91"/>
-                                    <segue destination="e9k-Av-EVA" kind="show" id="mJU-jE-GRa"/>
+                                    <segue destination="e9k-Av-EVA" kind="show" id="Khm-0l-g70"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -207,6 +207,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="MvD-6c-qDq"/>
+        <segue reference="Khm-0l-g70"/>
     </inferredMetricsTieBreakers>
 </document>
